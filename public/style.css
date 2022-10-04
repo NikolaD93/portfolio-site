@@ -34,6 +34,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 4rem;
+  }
+}
+
 li {
   list-style: none;
   text-transform: lowercase;
@@ -137,6 +143,13 @@ a:hover {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .alert {
+    padding: 12px 14px;
+    width: 280px;
+  }
+}
+
 .alert .icon-check {
   position: absolute;
   left: 40px;
@@ -154,6 +167,12 @@ a:hover {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .alert .icon-check {
+    left: 10px;
+  }
+}
+
 .alert .message {
   padding: 0 20px;
   font-size: 20px;
@@ -164,7 +183,14 @@ a:hover {
 @media (max-width: 426px) {
   .alert .message {
     font-size: 12px;
-    padding: 5px 0;
+    padding: 55px 0;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .alert .message {
+    font-size: 1rem;
+    padding: 90px 0;
   }
 }
 
@@ -343,12 +369,40 @@ a:hover {
   padding: 20px 0;
 }
 
-.nav-scroll a {
+@media (max-width: 426px) {
+  .nav-scroll {
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .nav-scroll {
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .nav-scroll ul {
+    width: 80%;
+  }
+}
+
+.nav-scroll ul li:first-child {
+  margin-left: 30px;
+}
+
+.nav-scroll ul li a {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
 
-.nav-scroll a:hover {
+@media (min-width: 426px) and (max-width: 768px) {
+  .nav-scroll ul li a {
+    font-size: .8rem;
+  }
+}
+
+.nav-scroll ul li a:hover {
   color: #0a0a0b;
 }
 
@@ -400,6 +454,18 @@ nav ul {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+  }
+}
+
 nav ul li {
   padding: 8px 15px;
   margin-left: 50px;
@@ -418,6 +484,12 @@ nav ul li:first-child {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  nav ul li {
+    margin-left: 10px;
+  }
+}
+
 nav ul li:hover {
   -webkit-transform: translate(20px);
           transform: translate(20px);
@@ -432,6 +504,12 @@ nav ul li a {
 @media (max-width: 426px) {
   nav ul li a {
     font-size: .8rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  nav ul li a {
+    font-size: .9rem;
   }
 }
 
@@ -686,6 +764,14 @@ header .end ul li {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .about .about-container .right-about {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+}
+
 .about .about-container .right-about .about-item {
   border: 1px solid #f6f6f6;
   border-radius: 5px;
@@ -696,6 +782,12 @@ header .end ul li {
 @media (max-width: 426px) {
   .about .about-container .right-about .about-item {
     width: 70%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .about .about-container .right-about .about-item {
+    width: 80%;
   }
 }
 
@@ -729,6 +821,12 @@ header .end ul li {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .about .about-container .right-about .about-item .abt-text .large-text {
+    font-size: 3rem;
+  }
+}
+
 .about .about-container .right-about .about-item .abt-text .small-text {
   padding: 3rem;
   position: relative;
@@ -740,6 +838,13 @@ header .end ul li {
 @media (max-width: 426px) {
   .about .about-container .right-about .about-item .abt-text .small-text {
     font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .about .about-container .right-about .about-item .abt-text .small-text {
+    font-size: 1.5rem;
     padding: 1rem;
   }
 }
@@ -783,6 +888,12 @@ header .end ul li {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .about .about-container .left-about p {
+    font-size: 1rem;
+  }
+}
+
 .about .about-container .left-about h4 {
   font-size: 2rem;
   color: #00B4D8;
@@ -794,6 +905,12 @@ header .end ul li {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .about .about-container .left-about h4 {
+    font-size: 1.5rem;
+  }
+}
+
 .about .about-container .left-about h5 {
   font-size: 2rem;
   color: #00B4D8;
@@ -802,6 +919,12 @@ header .end ul li {
 @media (max-width: 426px) {
   .about .about-container .left-about h5 {
     font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .about .about-container .left-about h5 {
+    font-size: 1.5rem;
   }
 }
 
@@ -1139,6 +1262,13 @@ header .end ul li {
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .contact .contact-container .right-contact {
+    padding: 30px 50px;
+    width: 100px;
+  }
+}
+
 .contact .contact-container .right-contact .input-box {
   position: relative;
   width: 350px;
@@ -1147,6 +1277,12 @@ header .end ul li {
 @media (max-width: 426px) {
   .contact .contact-container .right-contact .input-box {
     width: 100%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .contact .contact-container .right-contact .input-box {
+    width: 200px;
   }
 }
 
@@ -1164,6 +1300,12 @@ header .end ul li {
   font-size: 1em;
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .contact .contact-container .right-contact .input-box input {
+    width: 100%;
+  }
 }
 
 .contact .contact-container .right-contact .input-box input:valid ~ span {
@@ -1271,6 +1413,24 @@ header .end ul li {
   width: 90%;
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .contact .contact-container .left-contact img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 426px) {
+  footer div {
+    margin-top: 150px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  footer div {
+    margin-top: 150px;
+  }
+}
+
 footer div ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1303,6 +1463,13 @@ footer p {
 @media (max-width: 426px) {
   footer p {
     font-size: 1rem;
+    padding: 20px 0 10px 0;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  footer p {
+    font-size: 1.2rem;
     padding: 20px 0 10px 0;
   }
 }

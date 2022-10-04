@@ -52,15 +52,15 @@ const sendEmail = () => {
     Subject : "New message from Portfolio site",
     Body : "Name: " + document.getElementById("name").value + "<br> Email: " +  document.getElementById("email").value + "<br> Message: " +  document.getElementById("message").value
 }).then(
-  message => alert("Sent successfully")
+  // message => alert("Sent successfully")
  
   
-  // setTimeout(() => {
-  //   showAlert()
-  //   setTimeout(() => {
-  //     hideAlert()
-  //   },"4000")
-  // }, "2000")
+  setTimeout(() => {
+    showAlert()
+    setTimeout(() => {
+      hideAlert()
+    },"4000")
+  }, "2000")
  
   
 

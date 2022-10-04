@@ -27,6 +27,9 @@ h1, h2, h3, h4, h5, h6 {
     @media (max-width: 426px) {
        font-size: 3rem;
     }
+    @media (min-width: 426px) and (max-width: 768px) {
+       font-size: 4rem;
+    }
 }
 
 
@@ -97,10 +100,6 @@ a{
 }
 
 
-
-
-
-
 //alert 
 
 
@@ -116,6 +115,10 @@ a{
        padding: 5px 10px;
        width: 220px;
     }
+    @media (min-width: 426px) and (max-width: 768px) {
+       padding: 12px 14px;
+       width: 280px;
+    }
     .icon-check {
         position: absolute;
         left: 40px;
@@ -127,6 +130,9 @@ a{
             font-size: 20px;
             left: 20px;
         }
+        @media (min-width: 426px) and (max-width: 768px) {
+            left: 10px;
+        }
     }
     .message{
         padding: 0 20px;
@@ -135,7 +141,11 @@ a{
         margin-left: 40px;
         @media (max-width: 426px) {
             font-size: 12px;
-            padding: 5px 0;
+            padding: 55px 0;
+        }
+        @media (min-width: 426px) and (max-width: 768px) {
+            font-size: 1rem;
+            padding: 90px 0;
         }
     }
 
