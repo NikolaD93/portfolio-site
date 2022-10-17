@@ -8,6 +8,7 @@
 
 html{
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -16,8 +17,146 @@ body {
     background-color: $primary;
     color: $text;
     position: relative;
+   
 
 }
+
+.light{
+    background: $text;
+    color: $primary;
+    a{
+        color: $primary;
+    }
+    .header-icon{
+        color: $primary;
+        &:hover{
+            color: $secondary;
+            text-shadow: none;
+        }
+    }
+    .footer-icon{
+        color: $primary;
+        &:hover{
+            color: $text;
+        }
+    }
+    .title-hr{
+        background-color: $primary;
+    }
+    hr{
+        background-color: $primary;
+    }
+    
+    .btn-con{
+        .main-btn{
+
+            filter: drop-shadow( 5px 5px 10px);
+            background: $secondary;
+            color: $text;
+            &:hover{
+                border: none;
+                box-shadow: 2px 2px 20px $secondary;
+            }
+        }
+        .btn-text{
+            color: $text;
+            
+    }
+    }    
+
+   
+    nav{
+        ul{
+            li{
+                a{
+                    border-bottom: 2px solid $primary;
+                    &:hover{
+                        text-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+    header{
+        .start{
+            p{
+                border-bottom: 2px solid $primary;
+            }
+        }
+        img{
+            filter: drop-shadow( rgba(0, 0, 0, 0.25) 0px 14px 28px);
+        }
+    }
+        .right-about{
+            .about-item{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+    .skills{
+        .skill-icon{
+            &:hover{
+                transform: scale(1.5);
+                // transition: $transition;
+                background-color: $secondary;
+                border-radius: 5px;
+            }
+       }
+    }
+
+    .projects{
+        .card-wrapper{
+            .card{
+                border: 2px solid $primary;
+                .img-box{
+                    filter: drop-shadow( rgba(0, 0, 0, 0.25) 0px 14px 28px);
+                }
+                .content{
+                    .details{
+                        color: $primary;
+                        .project-icons{
+                            .project-icon-one{
+                                color: $primary;
+                            }
+                            .project-icon-two{
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+
+    .contact{
+       
+        .right-contact{
+            .input-box{
+                input{
+                    border-bottom: 2px solid $primary !important;
+                }
+                textarea{
+                    border-bottom: 2px solid $primary !important;
+                }
+            }
+        }
+
+        .left-contact{
+            img{
+                filter: drop-shadow( rgba(0, 0, 0, 0.25) 0px 14px 28px);
+            }
+        }
+    }
+
+    .alert{
+        .message{
+            color: $primary;
+        }
+    }
+}
+
+
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $headingsFont;
@@ -47,6 +186,20 @@ a{
     }
 }
 
+
+hr{
+    margin: 35px auto;
+    border: none;
+    height: 100px;
+    width: 2px;
+    background: $text;
+    @media (max-width: 426px) {
+        display: none;   
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        display: none;
+    }
+}
 
 
 .header-icon{
@@ -282,4 +435,25 @@ a{
     bottom: 0;
     z-index: -1;
 
+}
+
+
+
+#toggle{
+    position: relative;
+    left: 10%;
+    width: 40px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover{
+        transform: rotate(60deg);
+    }
+    @media (max-width: 426px) {
+       left: 10px;
+       width: 20px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        left: 10px;
+        width: 20px;
+    }
 }

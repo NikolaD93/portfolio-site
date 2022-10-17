@@ -93,4 +93,16 @@ window.addEventListener('scroll', ()=> {
 })
 
 
+const toggle = document.getElementById('toggle');
+
+toggle.addEventListener('click', ()=> {
+    document.body.classList.toggle('light');
+    if(document.body.classList.contains('light')){
+      toggle.src = "Img/moon.png"
+    }else{
+      toggle.src = "Img/sun.png"
+    }
+
+})
+
 

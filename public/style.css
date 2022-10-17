@@ -21,6 +21,124 @@ body {
   position: relative;
 }
 
+.light {
+  background: #f6f6f6;
+  color: #0a0a0b;
+}
+
+.light a {
+  color: #0a0a0b;
+}
+
+.light .header-icon {
+  color: #0a0a0b;
+}
+
+.light .header-icon:hover {
+  color: #00B4D8;
+  text-shadow: none;
+}
+
+.light .footer-icon {
+  color: #0a0a0b;
+}
+
+.light .footer-icon:hover {
+  color: #f6f6f6;
+}
+
+.light .title-hr {
+  background-color: #0a0a0b;
+}
+
+.light hr {
+  background-color: #0a0a0b;
+}
+
+.light .btn-con .main-btn {
+  -webkit-filter: drop-shadow(5px 5px 10px);
+          filter: drop-shadow(5px 5px 10px);
+  background: #00B4D8;
+  color: #f6f6f6;
+}
+
+.light .btn-con .main-btn:hover {
+  border: none;
+  -webkit-box-shadow: 2px 2px 20px #00B4D8;
+          box-shadow: 2px 2px 20px #00B4D8;
+}
+
+.light .btn-con .btn-text {
+  color: #f6f6f6;
+}
+
+.light nav ul li a {
+  border-bottom: 2px solid #0a0a0b;
+}
+
+.light nav ul li a:hover {
+  text-shadow: none;
+}
+
+.light header .start p {
+  border-bottom: 2px solid #0a0a0b;
+}
+
+.light header img {
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 14px 28px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 14px 28px);
+}
+
+.light .right-about .about-item {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.light .skills .skill-icon:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  background-color: #00B4D8;
+  border-radius: 5px;
+}
+
+.light .projects .card-wrapper .card {
+  border: 2px solid #0a0a0b;
+}
+
+.light .projects .card-wrapper .card .img-box {
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 14px 28px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 14px 28px);
+}
+
+.light .projects .card-wrapper .card .content .details {
+  color: #0a0a0b;
+}
+
+.light .projects .card-wrapper .card .content .details .project-icons .project-icon-one {
+  color: #0a0a0b;
+}
+
+.light .projects .card-wrapper .card .content .details .project-icons .project-icon-two {
+  color: #0a0a0b;
+}
+
+.light .contact .right-contact .input-box input {
+  border-bottom: 2px solid #0a0a0b !important;
+}
+
+.light .contact .right-contact .input-box textarea {
+  border-bottom: 2px solid #0a0a0b !important;
+}
+
+.light .contact .left-contact img {
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 14px 28px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 14px 28px);
+}
+
+.light .alert .message {
+  color: #0a0a0b;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Hahmlet", serif;
   font-size: 5.5rem;
@@ -52,6 +170,26 @@ a {
 
 a:hover {
   color: #00B4D8;
+}
+
+hr {
+  margin: 35px auto;
+  border: none;
+  height: 100px;
+  width: 2px;
+  background: #f6f6f6;
+}
+
+@media (max-width: 426px) {
+  hr {
+    display: none;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  hr {
+    display: none;
+  }
 }
 
 .header-icon {
@@ -360,6 +498,34 @@ a:hover {
   position: absolute;
   bottom: 0;
   z-index: -1;
+}
+
+#toggle {
+  position: relative;
+  left: 10%;
+  width: 40px;
+  cursor: pointer;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+
+#toggle:hover {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+@media (max-width: 426px) {
+  #toggle {
+    left: 10px;
+    width: 20px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  #toggle {
+    left: 10px;
+    width: 20px;
+  }
 }
 
 .nav-scroll {
@@ -680,26 +846,6 @@ header .end {
   }
 }
 
-header .end ul hr {
-  margin: 35px auto;
-  border: none;
-  height: 100px;
-  width: 2px;
-  background: #f6f6f6;
-}
-
-@media (max-width: 426px) {
-  header .end ul hr {
-    display: none;
-  }
-}
-
-@media (min-width: 426px) and (max-width: 768px) {
-  header .end ul hr {
-    display: none;
-  }
-}
-
 header .end ul li {
   margin-bottom: 20px;
 }
@@ -777,6 +923,7 @@ header .end ul li {
   border-radius: 5px;
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
+  width: 100%;
 }
 
 @media (max-width: 426px) {
