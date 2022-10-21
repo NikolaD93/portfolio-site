@@ -1,324 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/13f0576b8f.js" crossorigin="anonymous"></script>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/13f0576b8f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Nikola Dojcinovic Portfolio</title>
-</head>
-<body>
-
-    <svg class="svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        
-        <path fill="#00B4D8" fill-opacity="1" d="M0,128L80,112C160,96,320,64,480,80C640,96,800,160,960,181.3C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+  </head>
+  <body>
+    <svg
+      class="svg-bottom"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill="#00B4D8"
+        fill-opacity="1"
+        d="M0,128L80,112C160,96,320,64,480,80C640,96,800,160,960,181.3C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
     </svg>
-
-
-    
 
     <!-- nav -->
     <nav class="nav">
-        
-       <ul>
+      <ul>
         <li class="home"><a href="#home">Home</a></li>
         <li class="about"><a href="#about">About me</a></li>
         <li class="projects"><a href="#projects">Projects</a></li>
         <li class="contact"><a href="#contact">Contact</a></li>
-        <img id="toggle" src="Img/sun.png" alt="">
-       </ul>
-
-       
+        <img id="toggle" src="Img/sun.png" alt="" />
+      </ul>
     </nav>
 
     <!-- header -->
     <header class="link-section header" id="home">
-        <div class="start">
-            <h1 class="animate__animated animate__tada animate__slow"><span class="small-header">Hello, I am</span> <br>  <span class="first-letter">N</span>ikola <br> <span class="first-letter">D</span>ojcinovic</h1>
-            <p class="animate__animated animate__flipInX animate__delay-2s animate__slow">junior frontend developer</p>
-            <div class="btn-con">
-                <a href="./Img/Nikola Dojcinovic Resume.pdf" class="main-btn" download="Nikola-Dojcinovic-resume">
-                    <span class="btn-text">Download CV</span>
-                    <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
-                </a>
-            </div>
+      <div class="start">
+        <h1 class="animate__animated animate__tada animate__slow">
+          <span class="small-header">Hello, I am</span> <br />
+          <span class="first-letter">N</span>ikola <br />
+          <span class="first-letter">D</span>ojcinovic
+        </h1>
+        <p
+          class="animate__animated animate__flipInX animate__delay-2s animate__slow"
+        >
+          junior frontend developer
+        </p>
+        <div class="btn-con">
+          <a
+            href="./Img/Nikola Dojcinovic Resume.pdf"
+            class="main-btn"
+            download="Nikola-Dojcinovic-resume"
+          >
+            <span class="btn-text">Download CV</span>
+            <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+          </a>
         </div>
-       
-        <div class="img-header">
-            <img src="./Img/header.png" alt="programmer">
-        </div>
-        <div class="end">
-            <ul>
-                <hr>
-                <li><a href="tel:060-44-88-535"><i class="fa-solid fa-phone header-icon"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/nikoladojcinovic93/"><i class="fa-brands fa-linkedin-in header-icon"></i></a></li>
-                <li><a href="https://github.com/NikolaD93"><i class="fa-brands fa-github header-icon"></i></a></li>
-                <li><a href="mailto:nikoladojcnovic9@gmail.com"><i class="fa-solid fa-envelope header-icon"></i></a></li>
-                <hr>
-            
-            </ul>
-        </div>
+      </div>
+
+      <div class="img-header">
+        <img src="./Img/header.png" alt="programmer" />
+      </div>
+      <div class="end">
+        <ul>
+          <hr />
+          <li>
+            <a href="tel:060-44-88-535"
+              ><i class="fa-solid fa-phone header-icon"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nikoladojcinovic93/"
+              ><i class="fa-brands fa-linkedin-in header-icon"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/NikolaD93"
+              ><i class="fa-brands fa-github header-icon"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:nikoladojcnovic9@gmail.com"
+              ><i class="fa-solid fa-envelope header-icon"></i
+            ></a>
+          </li>
+          <hr />
+        </ul>
+      </div>
     </header>
 
-    
     <main>
-        <!-- about -->
-        <section class="section link-section about" id="about">
-            
-            <h2 class="section-title">About me</h2>
-            <hr class="title-hr">
-            
-            <div class="about-container">
-                <div class="left-about" data-aos="fade-right" data-aos-duration="1500">
-                    <h4>Information about me</h4>
-                    <p>After graduation last summer I was introduced to programming by a close friend. I’ve always been curious about software development and technology in general, but from the moment I produced “Hello World” in the console of my first application, I was hooked into the world of software development. Not only was it intellectually stimulating but it was the first time I found myself doing something I loved.
+      <!-- about -->
+      <section class="section link-section about" id="about">
+        <h2 class="section-title">About me</h2>
+        <hr class="title-hr" />
 
-                        Since being introduced to programming I have read and practiced as much material as one can possibly go through.
-                        I’m still learning and practicing on a daily basis, because I have truly discovered my passion in life.</p>
-                    <h5 class="hobbies">My hobbies:</h5>
-                    <p>photography &nbsp; <i class="fa-solid fa-camera-retro"></i> &nbsp; gym &nbsp; <i class="fa-solid fa-dumbbell"></i> &nbsp; cycling &nbsp; <i class="fa-solid fa-person-biking"></i> &nbsp; watching football games &nbsp; <i class="fa-regular fa-futbol"></i> &nbsp; reading books &nbsp; <i class="fa-solid fa-book"></i></p>   
-                </div>
-                <div class="right-about" data-aos="fade-left" data-aos-duration="1500">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">10+</p>
-                            <p class="small-text">Projects <br> Completed</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">8+</p>
-                            <p class="small-text">Months <br> of practise</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">100%</p>
-                            <p class="small-text">Willingness to <br> learn</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">100%</p>
-                            <p class="small-text">Dedication <br> and  hard work</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="about-container">
+          <div
+            class="left-about"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <h4>Information about me</h4>
+            <p>
+              After graduation last summer I was introduced to programming by a
+              close friend. I’ve always been curious about software development
+              and technology in general, but from the moment I produced “Hello
+              World” in the console of my first application, I was hooked into
+              the world of software development. Not only was it intellectually
+              stimulating but it was the first time I found myself doing
+              something I loved. Since being introduced to programming I have
+              read and practiced as much material as one can possibly go
+              through. I’m still learning and practicing on a daily basis,
+              because I have truly discovered my passion in life.
+            </p>
+            <h5 class="hobbies">My hobbies:</h5>
+            <p>
+              photography &nbsp; <i class="fa-solid fa-camera-retro"></i> &nbsp;
+              gym &nbsp; <i class="fa-solid fa-dumbbell"></i> &nbsp; cycling
+              &nbsp; <i class="fa-solid fa-person-biking"></i> &nbsp; watching
+              football games &nbsp; <i class="fa-regular fa-futbol"></i> &nbsp;
+              reading books &nbsp; <i class="fa-solid fa-book"></i>
+            </p>
+          </div>
+          <div
+            class="right-about"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">10+</p>
+                <p class="small-text">
+                  Projects <br />
+                  Completed
+                </p>
+              </div>
             </div>
-
-            <h4 class="skills-tittle">Skills</h4>
-
-            <div class="skills">
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <i class="fa-brands fa-html5 skill-icon"></i>
-                    </div>
-                    <div class="item">
-                        <i class="fa-brands fa-css3-alt skill-icon"></i>
-                    </div>
-                    <div class="item">
-                        <i class="fa-brands fa-bootstrap skill-icon"></i>
-                    </div>
-                    <div class="item">
-                        <i class="fa-brands fa-sass skill-icon"></i>
-                    </div>
-                    <div class="item">
-                        <i class="fa-brands fa-square-js skill-icon"></i>
-                    </div>
-                    <div class="item">
-                        <i class="fa-brands fa-react skill-icon"></i>
-                    </div>
-                    <div class="item">
-                        <i class="fa-brands fa-java skill-icon"></i>
-                    </div>
-                    
-                </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">8+</p>
+                <p class="small-text">
+                  Months <br />
+                  of practise
+                </p>
+              </div>
             </div>
-
-        </section>
-
-        <!-- projects -->
-        <section class="section link-section  projects" id="projects">
-            <h2 class="section-title">Projects</h2>
-            <hr class="title-hr project-hr">
-            <div class="card-wrapper" data-aos="fade-up" data-aos-duration="1500">
-                <div class="card">
-                    <div class="img-box">
-                        <img src="./Img/Shopping-list.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h5>Shopping List <br> <span><i class="fa-solid fa-chevron-down"></i></span></h5>
-                            <div class="data">
-                                <p>Used:  <strong>JavaScript</strong>, <strong>Bootstrap 5</strong>, <strong>CSS 3</strong>, <strong>HTML 5</strong>.</p>
-                                <p>Simple CRUD app.Learned how to manipulate with DOM elements. Implemented create, read, update and delete methods.</p>
-                            </div>
-                            <div class="project-icons">
-                                <a href="https://github.com/NikolaD93/Basic-CRUD-app" target="_blank"><i class="fa-brands fa-square-github project-icon-one"></i></a>
-                                <a href="https://shoppinglistnikola93.netlify.app/" target="_blank"><i class="fa-solid fa-globe project-icon-two"></i></a>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-                 <div class="card">
-                    <div class="img-box">
-                        <img src="./Img/gaming-shop.PNG" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h5>Gaming Shop <br> <span><i class="fa-solid fa-chevron-down"></i></span></h5>
-                            <div class="data">
-                                <p>Used:  <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>CSS 3</strong>, <strong>HTML 5</strong>.</p>
-                                <p>Web shop for gamers. Worked with session storage and local storage as well as server which was made in Node.js. Learned page navigation.</p>
-                            </div>
-                            <div class="project-icons">
-                                <a href="https://github.com/NikolaD93/Gaming-shop" target="_blank"><i class="fa-brands fa-square-github project-icon-one gaming-shop"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-box">
-                        <img src="./Img/Weather-App.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h5>Weather App <br> <span><i class="fa-solid fa-chevron-down"></i></span></h5>
-                            <div class="data">
-                                <p>Used:  <strong>JavaScript</strong>, <strong>CSS 3</strong>, <strong>HTML 5</strong>.</p>
-                                <p>Shows current weather details in user's location. In order to use it allow your location information.
-                                    Worked with fetch method and API.
-                                </p>
-                            </div>
-                            <div class="project-icons">
-                                <a href="https://github.com/NikolaD93/2-Weather-app" target="_blank"><i class="fa-brands fa-square-github project-icon-one"></i></a>
-                                <a href="https://weatherappnikola93.netlify.app/" target="_blank"><i class="fa-solid fa-globe project-icon-two"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-box">
-                        <img src="./Img/Todo-list.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h5>Todo List <br> <span><i class="fa-solid fa-chevron-down"></i></span></h5>
-                            <div class="data">
-                                <p>Used: <strong>React.js</strong>, <strong>JavaScript</strong>, <strong>Bootstrap 5</strong>, <strong>CSS 3</strong>, <strong>HTML 5</strong>.</p>
-                                <p>Simple todo list. Used hooks like useState, useEffect and useRef in order to make it. Learned how to work with components and states.
-                                </p>
-                            </div>
-                            <div class="project-icons">
-                                <a href="https://github.com/NikolaD93/todo-list" target="_blank"><i class="fa-brands fa-square-github project-icon-one"></i></a>
-                                <a href="https://todolistnikola93.netlify.app/" target="_blank"><i class="fa-solid fa-globe project-icon-two"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-box">
-                        <img src="./Img/kod-brku.PNG" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h5>Digital Menu<br> <span><i class="fa-solid fa-chevron-down"></i></span></h5>
-                            <div class="data">
-                                <p>Used:  <strong>JavaScript</strong>, <strong>Bootstrap 5</strong>, <strong>SCSS</strong>, <strong>HTML 5</strong>.</p>
-                                <p>This project is made for displays like tablets and smarphones. Made for a client, and made together with my colleague Aleksandar. Logo was made in Canva, as well as flyer. Flyer has a QR code which is scanned 100+ times every day.
-                                </p>
-                            </div>
-                            <div class="project-icons">
-                                <a href="https://github.com/NikolaD93/KodBrku-Menu" target="_blank"><i class="fa-brands fa-square-github project-icon-one"></i></a>
-                                <a href="https://www.kodbrku.rs/" target="_blank"><i class="fa-solid fa-globe project-icon-two"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-box">
-                        <img src="./Img/river-caffe.PNG" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="details">
-                            <h5>Digital menu <br> <span><i class="fa-solid fa-chevron-down"></i></span></h5>
-                            <div class="data">
-                                <p>Used:  <strong>JavaScript</strong>, <strong>SCSS</strong>, <strong>HTML 5</strong>.</p>
-                                <p>This project is made for displays like tablets and smarphones. Made for a client, and made together with my colleague Aleksandar. QR code is scanned 100+ times every day.
-                                </p>
-                            </div>
-                            <div class="project-icons">
-                                <a href="https://github.com/NikolaD93/Caffe-River-Menu" target="_blank"><i class="fa-brands fa-square-github project-icon-one"></i></a>
-                                <a href="https://river-caffe.rs/" target="_blank"><i class="fa-solid fa-globe project-icon-two"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">100%</p>
+                <p class="small-text">
+                  Willingness to <br />
+                  learn
+                </p>
+              </div>
             </div>
-        </section> 
-
-        <!-- contact -->
-        <section class="section link-section  contact" id="contact">
-            <h2 class="section-title contact-title">Contact me</h2>
-            <hr class="title-hr">
-
-            <div class="contact-container">
-                <div class="left-contact" data-aos="fade-right" data-aos-duration="1500">
-                    <img src="./Img/contact.png" alt="">  
-                </div>
-                <div class="right-contact" data-aos="fade-left" data-aos-duration="1500">
-                    <form onsubmit="sendEmail(); reset(); return false;">
-                        <div class="input-box">
-                            <input  type="text" id="name" required="required">
-                            <span> name</span>
-                        </div>
-                        <div class="input-box">
-                            <input  type="email" id="email" required="required">
-                            <span> email</span>
-                        </div>
-                        <div class="input-box">
-                            <textarea  id="message" cols="50" rows="10" required="required"></textarea>
-                            <span class="textarea-span">Message</span>
-                        </div>
-                        <button class="submit-btn" title="Click to send" type="submit" value="Submit">Send</button>
-                        <div class="alert" hidden>
-                            <span class="icon-check" ><i class="fa-solid fa-circle-check"></i></span>
-                            <span class="message">Message sent successfully!</span>
-                    
-                        </div>
-                    </form>
-                </div>
-                
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">100%</p>
+                <p class="small-text">
+                  Dedication <br />
+                  and hard work
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- footer -->
-        <footer>
-            <div>
-                <ul>
-                    <li><a href="tel:060-44-88-535"><i class="fa-solid fa-phone footer-icon"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/nikoladojcinovic93/"><i class="fa-brands fa-linkedin-in footer-icon"></i></a></li>
-                    <li><a href="https://github.com/NikolaD93"><i class="fa-brands fa-github footer-icon"></i></a></li>
-                    <li><a href="mailto:nikoladojcnovic9@gmail.com"><i class="fa-solid fa-envelope footer-icon"></i></a></li>
-                </ul>
+        <h4 class="skills-tittle">Skills</h4>
+
+        <div class="skills">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <i class="fa-brands fa-html5 skill-icon"></i>
             </div>
-            <p>&copy; Nikola Dojcinovic 2022.</p>
-        </footer>
+            <div class="item">
+              <i class="fa-brands fa-css3-alt skill-icon"></i>
+            </div>
+            <div class="item">
+              <i class="fa-brands fa-bootstrap skill-icon"></i>
+            </div>
+            <div class="item">
+              <i class="fa-brands fa-sass skill-icon"></i>
+            </div>
+            <div class="item">
+              <i class="fa-brands fa-square-js skill-icon"></i>
+            </div>
+            <div class="item">
+              <i class="fa-brands fa-react skill-icon"></i>
+            </div>
+            <div class="item">
+              <i class="fa-brands fa-java skill-icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- projects -->
+      <section class="section link-section projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <hr class="title-hr project-hr" />
+        <div class="card-wrapper" data-aos="fade-up" data-aos-duration="1500">
+          <div class="card">
+            <div class="img-box">
+              <img src="./Img/Budget-App.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="details">
+                <h5>
+                  Budget App <br />
+                  <span><i class="fa-solid fa-chevron-down"></i></span>
+                </h5>
+                <div class="data">
+                  <p>
+                    Used: <strong>React.js</strong>, <strong>CSS 3</strong>,
+                    <strong>HTML 5</strong>.
+                  </p>
+                  <p>
+                    Made budget tracker app using hooks such as useState, useEffect, useContext and useReduce. Data is storred in localStorage. Learned how to work with Context and Reducer.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a
+                    href="https://github.com/NikolaD93/Budget-app-react"
+                    target="_blank"
+                    ><i class="fa-brands fa-square-github project-icon-one"></i
+                  ></a>
+                  <a
+                    href="https://budgetappnikola93.netlify.app/"
+                    target="_blank"
+                    ><i class="fa-solid fa-globe project-icon-two"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="./Img/Shopping-list.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="details">
+                <h5>
+                  Shopping List <br />
+                  <span><i class="fa-solid fa-chevron-down"></i></span>
+                </h5>
+                <div class="data">
+                  <p>
+                    Used: <strong>JavaScript</strong>,
+                    <strong>Bootstrap 5</strong>, <strong>CSS 3</strong>,
+                    <strong>HTML 5</strong>.
+                  </p>
+                  <p>
+                    Simple CRUD app.Learned how to manipulate with DOM elements.
+                    Implemented create, read, update and delete methods.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a
+                    href="https://github.com/NikolaD93/Basic-CRUD-app"
+                    target="_blank"
+                    ><i class="fa-brands fa-square-github project-icon-one"></i
+                  ></a>
+                  <a
+                    href="https://shoppinglistnikola93.netlify.app/"
+                    target="_blank"
+                    ><i class="fa-solid fa-globe project-icon-two"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="./Img/gaming-shop.PNG" alt="" />
+            </div>
+            <div class="content">
+              <div class="details">
+                <h5>
+                  Gaming Shop <br />
+                  <span><i class="fa-solid fa-chevron-down"></i></span>
+                </h5>
+                <div class="data">
+                  <p>
+                    Used: <strong>JavaScript</strong>, <strong>Node.js</strong>,
+                    <strong>CSS 3</strong>, <strong>HTML 5</strong>.
+                  </p>
+                  <p>
+                    Web shop for gamers. Worked with session storage and local
+                    storage as well as server which was made in Node.js. Learned
+                    page navigation.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a
+                    href="https://github.com/NikolaD93/Gaming-shop"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-square-github project-icon-one gaming-shop"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="./Img/Weather-App.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="details">
+                <h5>
+                  Weather App <br />
+                  <span><i class="fa-solid fa-chevron-down"></i></span>
+                </h5>
+                <div class="data">
+                  <p>
+                    Used: <strong>JavaScript</strong>, <strong>CSS 3</strong>,
+                    <strong>HTML 5</strong>.
+                  </p>
+                  <p>
+                    Shows current weather details in user's location. In order
+                    to use it allow your location information. Worked with fetch
+                    method and API.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a
+                    href="https://github.com/NikolaD93/2-Weather-app"
+                    target="_blank"
+                    ><i class="fa-brands fa-square-github project-icon-one"></i
+                  ></a>
+                  <a
+                    href="https://weatherappnikola93.netlify.app/"
+                    target="_blank"
+                    ><i class="fa-solid fa-globe project-icon-two"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="./Img/Todo-list.png" alt="" />
+            </div>
+            <div class="content">
+              <div class="details">
+                <h5>
+                  Todo List <br />
+                  <span><i class="fa-solid fa-chevron-down"></i></span>
+                </h5>
+                <div class="data">
+                  <p>
+                    Used: <strong>React.js</strong>,
+                    <strong>JavaScript</strong>, <strong>Bootstrap 5</strong>,
+                    <strong>CSS 3</strong>, <strong>HTML 5</strong>.
+                  </p>
+                  <p>
+                    Simple todo list. Used hooks like useState, useEffect and
+                    useRef in order to make it. Learned how to work with
+                    components and states.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a
+                    href="https://github.com/NikolaD93/todo-list"
+                    target="_blank"
+                    ><i class="fa-brands fa-square-github project-icon-one"></i
+                  ></a>
+                  <a
+                    href="https://todolistnikola93.netlify.app/"
+                    target="_blank"
+                    ><i class="fa-solid fa-globe project-icon-two"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="./Img/kod-brku.PNG" alt="" />
+            </div>
+            <div class="content">
+              <div class="details">
+                <h5>
+                  Digital Menu<br />
+                  <span><i class="fa-solid fa-chevron-down"></i></span>
+                </h5>
+                <div class="data">
+                  <p>
+                    Used: <strong>JavaScript</strong>,
+                    <strong>Bootstrap 5</strong>, <strong>SCSS</strong>,
+                    <strong>HTML 5</strong>.
+                  </p>
+                  <p>
+                    This project is made for displays like tablets and
+                    smarphones. Made for a client, and made together with my
+                    colleague Aleksandar. Logo was made in Canva, as well as
+                    flyer. Flyer has a QR code which is scanned 100+ times every
+                    day.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a
+                    href="https://github.com/NikolaD93/KodBrku-Menu"
+                    target="_blank"
+                    ><i class="fa-brands fa-square-github project-icon-one"></i
+                  ></a>
+                  <a href="https://www.kodbrku.rs/" target="_blank"
+                    ><i class="fa-solid fa-globe project-icon-two"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-box">
+              <img src="./Img/river-caffe.PNG" alt="" />
+            </div>
+            <div class="content">
+              <div class="details">
+                <h5>
+                  Digital menu <br />
+                  <span><i class="fa-solid fa-chevron-down"></i></span>
+                </h5>
+                <div class="data">
+                  <p>
+                    Used: <strong>JavaScript</strong>, <strong>SCSS</strong>,
+                    <strong>HTML 5</strong>.
+                  </p>
+                  <p>
+                    This project is made for displays like tablets and
+                    smarphones. Made for a client, and made together with my
+                    colleague Aleksandar. QR code is scanned 100+ times every
+                    day.
+                  </p>
+                </div>
+                <div class="project-icons">
+                  <a
+                    href="https://github.com/NikolaD93/Caffe-River-Menu"
+                    target="_blank"
+                    ><i class="fa-brands fa-square-github project-icon-one"></i
+                  ></a>
+                  <a href="https://river-caffe.rs/" target="_blank"
+                    ><i class="fa-solid fa-globe project-icon-two"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="section link-section contact" id="contact">
+        <h2 class="section-title contact-title">Contact me</h2>
+        <hr class="title-hr" />
+
+        <div class="contact-container">
+          <div
+            class="left-contact"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <img src="./Img/contact.png" alt="" />
+          </div>
+          <div
+            class="right-contact"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <form onsubmit="sendEmail(); reset(); return false;">
+              <div class="input-box">
+                <input type="text" id="name" required="required" />
+                <span> name</span>
+              </div>
+              <div class="input-box">
+                <input type="email" id="email" required="required" />
+                <span> email</span>
+              </div>
+              <div class="input-box">
+                <textarea
+                  id="message"
+                  cols="50"
+                  rows="10"
+                  required="required"
+                ></textarea>
+                <span class="textarea-span">Message</span>
+              </div>
+              <button
+                class="submit-btn"
+                title="Click to send"
+                type="submit"
+                value="Submit"
+              >
+                Send
+              </button>
+              <div class="alert" hidden>
+                <span class="icon-check"
+                  ><i class="fa-solid fa-circle-check"></i
+                ></span>
+                <span class="message">Message sent successfully!</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div>
+          <ul>
+            <li>
+              <a href="tel:060-44-88-535"
+                ><i class="fa-solid fa-phone footer-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/nikoladojcinovic93/"
+                ><i class="fa-brands fa-linkedin-in footer-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/NikolaD93"
+                ><i class="fa-brands fa-github footer-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:nikoladojcnovic9@gmail.com"
+                ><i class="fa-solid fa-envelope footer-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p>&copy; Nikola Dojcinovic 2022.</p>
+      </footer>
     </main>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="main.js"></script>  
-</body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

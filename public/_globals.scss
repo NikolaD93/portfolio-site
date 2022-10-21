@@ -1,4 +1,4 @@
-@import 'vars';
+@import "vars";
 
 * {
     margin: 0;
@@ -6,9 +6,8 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
-    
 }
 
 body {
@@ -17,248 +16,235 @@ body {
     background-color: $primary;
     color: $text;
     position: relative;
-   
-
 }
 
-.light{
+.light {
     background: $text;
     color: $primary;
-    a{
+    a {
         color: $primary;
     }
-    .header-icon{
+    .header-icon {
         color: $primary;
-        &:hover{
+        &:hover {
             color: $secondary;
             text-shadow: none;
         }
     }
-    .footer-icon{
+    .footer-icon {
         color: $primary;
-        &:hover{
+        &:hover {
             color: $text;
         }
     }
-    .title-hr{
+    .title-hr {
         background-color: $primary;
     }
-    hr{
+    hr {
         background-color: $primary;
     }
-    
-    .btn-con{
-        .main-btn{
 
-            filter: drop-shadow( 5px 5px 10px);
+    .btn-con {
+        .main-btn {
+            filter: drop-shadow(5px 5px 10px);
             background: $secondary;
             color: $text;
-            &:hover{
+            &:hover {
                 border: none;
                 box-shadow: 2px 2px 20px $secondary;
             }
         }
-        .btn-text{
+        .btn-text {
             color: $text;
-            
+        }
     }
-    }    
 
-   
-    nav{
-        ul{
-            li{
-                a{
+    nav {
+        ul {
+            li {
+                a {
                     border-bottom: 2px solid $primary;
-                    &:hover{
+                    &:hover {
                         text-shadow: none;
                     }
                 }
             }
         }
     }
-    header{
-        .start{
-            p{
+    header {
+        .start {
+            p {
                 border-bottom: 2px solid $primary;
             }
         }
-        img{
-            filter: drop-shadow( rgba(0, 0, 0, 0.25) 0px 14px 28px);
+        img {
+            filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 14px 28px);
         }
     }
-        .right-about{
-            .about-item{
+    .right-about {
+        .about-item {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
-    .skills{
-        .skill-icon{
-            &:hover{
+    .skills {
+        .skill-icon {
+            &:hover {
                 transform: scale(1.5);
                 // transition: $transition;
                 background-color: $secondary;
                 border-radius: 5px;
             }
-       }
+        }
     }
 
-    .projects{
-        .card-wrapper{
-            .card{
+    .projects {
+        .card-wrapper {
+            .card {
                 border: 2px solid $primary;
-                .img-box{
-                    filter: drop-shadow( rgba(0, 0, 0, 0.25) 0px 14px 28px);
+                .img-box {
+                    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 14px 28px);
                 }
-                .content{
-                    .details{
+                .content {
+                    .details {
                         color: $primary;
-                        .project-icons{
-                            .project-icon-one{
+                        .project-icons {
+                            .project-icon-one {
                                 color: $primary;
                             }
-                            .project-icon-two{
+                            .project-icon-two {
                                 color: $primary;
                             }
                         }
                     }
                 }
             }
-           
         }
     }
 
-    .contact{
-       
-        .right-contact{
-            .input-box{
-                input{
+    .contact {
+        .right-contact {
+            .input-box {
+                input {
                     border-bottom: 2px solid $primary !important;
                     color: $primary !important;
                 }
-                textarea{
+                textarea {
                     border-bottom: 2px solid $primary !important;
                     color: $primary !important;
                 }
             }
         }
 
-        .left-contact{
-            img{
-                filter: drop-shadow( rgba(0, 0, 0, 0.25) 0px 14px 28px);
+        .left-contact {
+            img {
+                filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 14px 28px);
             }
         }
     }
 
-    .alert{
-        .message{
+    .alert {
+        .message {
             color: $primary;
         }
     }
 }
 
-
-
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $headingsFont;
     font-size: 5.5rem;
     font-weight: 700;
     text-align: center;
     @media (max-width: 426px) {
-       font-size: 3rem;
+        font-size: 3rem;
     }
     @media (min-width: 426px) and (max-width: 768px) {
-       font-size: 4rem;
+        font-size: 4rem;
     }
 }
 
-
-li{
+li {
     list-style: none;
     text-transform: lowercase;
 }
 
-a{
+a {
     text-decoration: none;
     color: $text;
-    &:hover{
+    &:hover {
         color: $secondary;
-
     }
 }
 
-
-hr{
+hr {
     margin: 35px auto;
     border: none;
     height: 100px;
     width: 2px;
     background: $text;
     @media (max-width: 426px) {
-        display: none;   
+        display: none;
     }
     @media (min-width: 426px) and (max-width: 768px) {
         display: none;
     }
 }
 
-
-.header-icon{
+.header-icon {
     font-size: 1.5rem;
     color: $text;
     transition: $transition;
     @media (max-width: 426px) {
-       font-size: 1.2rem;
+        font-size: 1.2rem;
     }
     @media (min-width: 426px) and (max-width: 768px) {
-       font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-    &:hover{
+    &:hover {
         transform: rotate(15deg) scale(1.5);
         color: $primary;
         text-shadow: 2px 2px 10px $secondary;
     }
 }
 
-.footer-icon{
+.footer-icon {
     font-size: 1.5rem;
     color: $text;
     transition: $transition;
     @media (max-width: 426px) {
-       font-size: 1.2rem;
+        font-size: 1.2rem;
     }
     @media (min-width: 426px) and (max-width: 768px) {
-       font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-    &:hover{
+    &:hover {
         transform: rotate(15deg) scale(1.5);
         color: $primary;
         text-shadow: $textShadow;
     }
 }
 
-
-
-.first-letter{
+.first-letter {
     color: $secondary;
 }
 
-.small-header{
+.small-header {
     font-size: 3rem;
     @media (max-width: 426px) {
-       font-size: 1rem;
+        font-size: 1rem;
     }
     @media (min-width: 426px) and (max-width: 768px) {
-       font-size: 1.5rem;
+        font-size: 1.5rem;
     }
 }
 
+//alert
 
-//alert 
-
-
-.alert{
+.alert {
     padding: 20px 40px;
     width: 420px;
     border-radius: 5px;
@@ -267,12 +253,12 @@ hr{
     overflow: hidden;
     margin-top: 30px;
     @media (max-width: 426px) {
-       padding: 5px 10px;
-       width: 220px;
+        padding: 5px 10px;
+        width: 220px;
     }
     @media (min-width: 426px) and (max-width: 768px) {
-       padding: 12px 14px;
-       width: 280px;
+        padding: 12px 14px;
+        width: 280px;
     }
     .icon-check {
         position: absolute;
@@ -289,7 +275,7 @@ hr{
             left: 10px;
         }
     }
-    .message{
+    .message {
         padding: 0 20px;
         font-size: 20px;
         color: $text;
@@ -303,14 +289,9 @@ hr{
             padding: 90px 0;
         }
     }
-
 }
 
-
-
-
-
-.title-hr{
+.title-hr {
     margin: 15px auto;
     border: none;
     width: 15%;
@@ -318,8 +299,7 @@ hr{
     background: $text;
 }
 
-
-.section{
+.section {
     padding: 100px 200px;
     min-height: 100vh;
     width: 100%;
@@ -327,29 +307,28 @@ hr{
         padding: 10px 10px;
     }
     @media (min-width: 426px) and (max-width: 768px) {
-       padding: 20px 40px;
+        padding: 20px 40px;
     }
 }
 
-.section-title{
-   font-size: 4rem;
-   @media (max-width: 426px) {
-       font-size: 2rem;
-       margin-top: 60px;
+.section-title {
+    font-size: 4rem;
+    @media (max-width: 426px) {
+        font-size: 2rem;
+        margin-top: 60px;
     }
     @media (min-width: 426px) and (max-width: 768px) {
-       font-size: 3rem;
+        font-size: 3rem;
     }
 }
-
 
 // buttons
 
-.btn-con{
+.btn-con {
     display: flex;
     align-self: center;
     margin-top: 20px;
-    .main-btn{
+    .main-btn {
         border-radius: 30px;
         color: $text;
         font-weight: 500;
@@ -364,7 +343,7 @@ hr{
         @media (max-width: 426px) {
             width: 100px;
         }
-        .btn-text{
+        .btn-text {
             padding: 0 2rem;
             @media (max-width: 426px) {
                 padding: 0 5px;
@@ -373,7 +352,7 @@ hr{
                 margin-left: 3px;
             }
         }
-        .btn-icon{
+        .btn-icon {
             background-color: $secondary;
             display: flex;
             justify-content: center;
@@ -384,10 +363,9 @@ hr{
                 font-size: 10px;
                 padding: 5px 5px;
             }
-    
         }
-        &::before{
-            content: '';
+        &::before {
+            content: "";
             position: absolute;
             top: 0;
             right: 0;
@@ -395,20 +373,18 @@ hr{
             transition: $transition;
             z-index: -1;
         }
-        &:hover{
-            &::before{
+        &:hover {
+            &::before {
                 width: 100%;
                 height: 100%;
                 background-color: $secondary;
                 transform: translateX(0);
-
             }
         }
     }
 }
 
-
-  .submit-btn{
+.submit-btn {
     border-radius: 30px;
     color: $text;
     background-color: $secondary;
@@ -423,36 +399,32 @@ hr{
     transition: $transition;
     border: none;
     @media (max-width: 426px) {
-       font-size: 1rem;
+        font-size: 1rem;
     }
-    &:hover{
-       border: none;
-       box-shadow: 2px 2px 20px $secondary;
+    &:hover {
+        border: none;
+        box-shadow: 2px 2px 20px $secondary;
     }
 }
 
-
-.svg-bottom{
+.svg-bottom {
     position: absolute;
     bottom: 0;
     z-index: -1;
-
 }
 
-
-
-#toggle{
+#toggle {
     position: relative;
     left: 10%;
     width: 40px;
     cursor: pointer;
     transition: $transition;
-    &:hover{
+    &:hover {
         transform: rotate(60deg);
     }
     @media (max-width: 426px) {
-       left: 10px;
-       width: 20px;
+        left: 10px;
+        width: 20px;
     }
     @media (min-width: 426px) and (max-width: 768px) {
         left: 10px;
