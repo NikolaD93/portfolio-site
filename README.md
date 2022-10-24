@@ -1,2 +1,3 @@
-This is my portfoli website. Used JavaScript, JQuery,  Scss, Css and Html for making.
-Live: https://portfoliositenikola93.netlify.app/
+This is my portfolio website. Used JavaScript, JQuery,  Scss, Css and Html for making it. Learned how to toggle light and dark themes while making it. 
+
+# Live: https://portfoliositenikola93.netlify.app/
