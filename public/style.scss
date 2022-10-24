@@ -301,7 +301,7 @@ header {
                 line-height: 2rem;
                 padding: 1rem;
                 text-align: center;
-                opacity: 0.5;
+                opacity: 0.8;
                 @media (max-width: 426px) {
                     font-size: 0.8rem;
                 }
@@ -468,7 +468,7 @@ header {
                     span {
                         font-size: 0.75em;
                         font-weight: 500;
-                        opacity: 0.5;
+                        opacity: 0.8;
                         display: block;
                         padding: 20px;
                         @media (max-width: 426px) {
@@ -479,7 +479,7 @@ header {
                         }
                     }
                     .data {
-                        opacity: 0.6;
+                        opacity: 0.8;
                         line-height: 1.5;
                         @media (max-width: 426px) {
                             font-size: 1rem;
@@ -492,11 +492,6 @@ header {
                     .project-icons {
                         .project-icon-one {
                             color: $text;
-                            font-size: 2rem;
-                            margin-top: 20px;
-                            margin-right: 20px;
-                            transition: $transition;
-                            @media (max-width: 426px) {
                                 font-size: 1.7rem;
                             }
                             &:hover {
