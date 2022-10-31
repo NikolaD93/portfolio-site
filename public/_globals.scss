@@ -86,6 +86,12 @@ body {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
+    .left-about {
+        lord-icon {
+    
+            color: black;
+        }
+    }
     .skills {
         .skill-icon {
             &:hover {
@@ -415,7 +421,8 @@ hr {
 
 #toggle {
     position: relative;
-    left: 10%;
+    left: 80%;
+    top: -30px;
     width: 40px;
     cursor: pointer;
     transition: $transition;
@@ -423,11 +430,121 @@ hr {
         transform: rotate(60deg);
     }
     @media (max-width: 426px) {
-        left: 10px;
-        width: 20px;
+        width: 25px;
+        top: -50px;
+        left: 65%;
     }
     @media (min-width: 426px) and (max-width: 768px) {
-        left: 10px;
-        width: 20px;
+        width: 25px;
+        top: -50px;
+        left: 70%;
     }
 }
+
+lord-icon {
+    @media (max-width: 426px) {
+        width: 200px !important;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        width: 220px !important;
+    }
+}
+
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    padding: 40px;
+    display: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    @media (max-width: 426px) {
+        display: block;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        display: block;
+    }
+    .menu-btn__burger {
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px $primary;
+        transition: all 0.5s ease-in-out;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 6px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px $primary;
+            transition: all 0.5s ease-in-out;
+            transform: translateY(-16px);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 6px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px $primary;
+            transition: all 0.5s ease-in-out;
+            transform: translateY(16px);
+        }
+    }
+}
+
+.menu-btn.open {
+    .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+        &::before{
+            transform: rotate(45deg) translate(35px, -35px);
+        }
+        &::after{
+            transform: rotate(-45deg) translate(35px, 35px);
+        }
+    }
+}
+
+.burger-menu-list{
+    background-color: $secondary;
+    width: 120%;
+    transform: translate(-100%);
+    transition: $transition;
+    z-index: 999;
+    display: none;
+    @media (max-width: 426px) {
+        display: block;
+
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        display: block;
+    }
+    .burger-menu-ul{
+        padding: 100px 30px 30px 30px;
+        text-align: center;
+        .burger-menu-li{
+            line-height: 2;
+            a{
+                letter-spacing: 2px;
+                &:hover{
+                    color: $text;
+                }
+            }
+        }
+    }
+}
+
+.show{
+    transform: translate(0);
+}
+
+

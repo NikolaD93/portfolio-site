@@ -96,3 +96,20 @@ toggle.addEventListener("click", () => {
     toggle.src = "Img/sun.png";
   }
 });
+
+
+const menuBtn = document.querySelector('.menu-btn');
+const menuList = document.querySelector('.burger-menu-list');
+
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuList.classList.add('show');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+    menuList.classList.remove('show');
+  }
+});

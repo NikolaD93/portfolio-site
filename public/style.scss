@@ -6,12 +6,12 @@
 .nav-scroll {
     transition: $transition;
     background-color: $secondary;
-    padding: 20px 0;
+    padding: 30px 0 0 0;
     @media (max-width: 426px) {
-        padding: 15px 0;
+        display: none;
     }
     @media (min-width: 426px) and (max-width: 768px) {
-        padding: 15px 0;
+        display: none;
     }
     ul {
         @media (min-width: 426px) and (max-width: 768px) {
@@ -42,6 +42,7 @@ nav {
     transition: $transition;
     @media (max-width: 426px) {
         padding: 20px 0;
+       
     }
     @media (min-width: 426px) and (max-width: 768px) {
         padding: 30px 0;
@@ -53,14 +54,10 @@ nav {
         overflow: hidden;
         transition: $transition;
         @media (max-width: 426px) {
-            display: flex;
-            justify-content: center;
-            width: 80%;
+            display: none;
         }
         @media (min-width: 426px) and (max-width: 768px) {
-            display: flex;
-            justify-content: center;
-            width: 80%;
+            display: none;
         }
         li {
             padding: 8px 15px;
@@ -119,11 +116,12 @@ header {
     justify-content: space-around;
     align-items: center;
     @media (max-width: 426px) {
-        padding: 40px 20px;
+        padding: 0 20px;
         flex-direction: column;
+
     }
     @media (min-width: 426px) and (max-width: 768px) {
-        padding: 60px 40px;
+        padding: 120px 40px;
         flex-direction: column;
     }
     .start {
@@ -133,9 +131,11 @@ header {
         align-items: center;
         @media (max-width: 426px) {
             flex: 0 0 100%;
+            margin-top: -80px;
         }
         @media (min-width: 426px) and (max-width: 768px) {
             flex: 0 0 100%;
+            margin-top: -80px;
         }
         p {
             text-align: center;
@@ -356,7 +356,6 @@ header {
                 transition: $transition;
                 &:hover {
                     transform: scale(1.5);
-                    // transition: $transition;
                     color: $text;
                 }
             }
@@ -388,7 +387,7 @@ header {
             cursor: pointer;
             row-gap: 50px;
             @media (max-width: 426px) {
-                flex: 0 0 100%;
+                flex: 0 0 90%;
             }
             @media (min-width: 426px) and (max-width: 768px) {
                 flex: 0 0 100%;
@@ -689,7 +688,11 @@ header {
             }
             img {
                 width: 90%;
+                @media (max-width: 426px) {
+                    padding-top: 100px;
+                }
                 @media (min-width: 426px) and (max-width: 768px) {
+                    padding-top: 100px;
                     width: 70%;
                 }
             }
