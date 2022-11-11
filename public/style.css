@@ -19,33 +19,6 @@ body {
   background: radial-gradient(circle at 10% 20%, #0a0a0b 0%, #323232 90.2%);
   color: #f6f6f6;
   position: relative;
-  background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .light {
@@ -1387,12 +1360,12 @@ header .end ul li {
   }
 }
 
-.projects .card-wrapper .card:hover:nth-child(6) {
-  height: 550px;
+.projects .card-wrapper .card:hover:nth-child(7) {
+  height: 600px;
 }
 
 @media (max-width: 426px) {
-  .projects .card-wrapper .card:hover:nth-child(6) {
+  .projects .card-wrapper .card:hover:nth-child(7) {
     height: 680px;
   }
 }
