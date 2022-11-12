@@ -210,7 +210,6 @@ header {
         grid-template-columns: repeat(2, 1fr);
         padding-top: 5rem;
         padding-bottom: 5rem;
-
         @media (max-width: 426px) {
             grid-template-columns: 1fr;
         }
@@ -406,19 +405,14 @@ header {
                 }
             }
             &:hover {
-                height: 550px;
-                &:nth-child(5) {
-                    height: 620px;
-                    @media (max-width: 426px) {
-                        height: 760px;
-                    }
-                }
+                height: 620px;
                 &:nth-child(8) {
-                    height: 600px;
+                    height: 650px;
                     @media (max-width: 426px) {
                         height: 680px;
                     }
                 }
+
                 @media (max-width: 426px) {
                     height: 620px;
                 }
@@ -488,7 +482,7 @@ header {
                     .data {
                         opacity: 0.8;
                         line-height: 1.5;
-                        p:first-child{
+                        p:first-child {
                             margin-bottom: 20px;
                             font-size: 1.2rem;
                             @media (max-width: 426px) {

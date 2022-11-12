@@ -1351,21 +1351,11 @@ header .end ul li {
 }
 
 .projects .card-wrapper .card:hover {
-  height: 550px;
-}
-
-.projects .card-wrapper .card:hover:nth-child(5) {
   height: 620px;
 }
 
-@media (max-width: 426px) {
-  .projects .card-wrapper .card:hover:nth-child(5) {
-    height: 760px;
-  }
-}
-
 .projects .card-wrapper .card:hover:nth-child(8) {
-  height: 600px;
+  height: 650px;
 }
 
 @media (max-width: 426px) {
