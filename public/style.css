@@ -1364,12 +1364,12 @@ header .end ul li {
   }
 }
 
-.projects .card-wrapper .card:hover:nth-child(7) {
+.projects .card-wrapper .card:hover:nth-child(8) {
   height: 600px;
 }
 
 @media (max-width: 426px) {
-  .projects .card-wrapper .card:hover:nth-child(7) {
+  .projects .card-wrapper .card:hover:nth-child(8) {
     height: 680px;
   }
 }
@@ -1472,6 +1472,17 @@ header .end ul li {
 .projects .card-wrapper .card .content .details .data {
   opacity: 0.8;
   line-height: 1.5;
+}
+
+.projects .card-wrapper .card .content .details .data p:first-child {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 426px) {
+  .projects .card-wrapper .card .content .details .data p:first-child {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 426px) {
