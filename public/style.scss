@@ -42,7 +42,6 @@ nav {
     transition: $transition;
     @media (max-width: 426px) {
         padding: 20px 0;
-       
     }
     @media (min-width: 426px) and (max-width: 768px) {
         padding: 30px 0;
@@ -118,7 +117,6 @@ header {
     @media (max-width: 426px) {
         padding: 0 20px;
         flex-direction: column;
-
     }
     @media (min-width: 426px) and (max-width: 768px) {
         padding: 120px 40px;
@@ -255,7 +253,13 @@ header {
                     .large-text {
                         font-size: 4rem;
                         font-weight: 700;
-                        color: $secondary;
+                        background: -webkit-linear-gradient(
+                            339deg,
+                            rgba(0, 180, 216, 1) 1%,
+                            rgba(246, 246, 246, 1) 100%
+                        );
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                         @media (max-width: 426px) {
                             font-size: 2rem;
                         }
@@ -352,7 +356,9 @@ header {
             align-items: center;
             .skill-icon {
                 font-size: 5.5rem;
-                color: $secondary;
+                background: -webkit-linear-gradient(339deg, rgba(246, 246, 246, 1) 1%, rgba(0, 180, 216, 1) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 cursor: pointer;
                 transition: $transition;
                 &:hover {

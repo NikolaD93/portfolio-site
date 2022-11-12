@@ -1123,7 +1123,9 @@ header .end ul li {
 .about .about-container .right-about .about-item .abt-text .large-text {
   font-size: 4rem;
   font-weight: 700;
-  color: #00b4d8;
+  background: -webkit-linear-gradient(339deg, #00b4d8 1%, #f6f6f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 426px) {
@@ -1275,7 +1277,9 @@ header .end ul li {
 
 .about .skills .item .skill-icon {
   font-size: 5.5rem;
-  color: #00b4d8;
+  background: -webkit-linear-gradient(339deg, #f6f6f6 1%, #00b4d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
