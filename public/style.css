@@ -1487,11 +1487,14 @@ header .end ul li {
   text-transform: uppercase;
 }
 
+.projects .card-wrapper .card .content .details .project-icons {
+  margin-top: 20px;
+}
+
 .projects .card-wrapper .card .content .details .project-icons .project-icon-one {
   color: #f6f6f6;
   font-size: 2rem;
   margin-top: 20px;
-  margin-right: 20px;
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
